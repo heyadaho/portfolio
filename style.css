@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+    color: #1a1a1a;
+    line-height: 1.6;
+    background: #ffffff;
+}
+
+/* Header and Navigation */
+header {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1a1a1a;
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+
+nav a {
+    color: #666;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+nav a:hover,
+nav a.active {
+    color: #1a1a1a;
+}
+
+/* Main Content */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+.intro {
+    margin-bottom: 100px;
+}
+
+.intro h1 {
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.intro p {
+    font-size: 20px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Work Section */
+.work h2 {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #999;
+    margin-bottom: 40px;
+}
+
+.case-study-card {
+    display: block;
+    padding: 40px 0;
+    border-top: 1px solid #e5e5e5;
+    text-decoration: none;
+    color: inherit;
+    transition: opacity 0.2s;
+}
+
+.case-study-card:hover {
+    opacity: 0.6;
+}
+
+.case-study-card h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.case-study-card p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+.case-study-card .role {
+    font-size: 14px;
+    color: #999;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .intro h1 {
+        font-size: 36px;
+    }
+    
+    nav ul {
+        gap: 20px;
+    }
+}
+
+/* Case Study Pages */
+.case-study {
+    max-width: 700px;
+}
+
+.case-study-header {
+    margin-bottom: 60px;
+}
+
+.case-study-header h1 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    line-height: 1.2;
+}
+
+.case-study-header .subtitle {
+    font-size: 20px;
+    color: #666;
+}
+
+.case-study section {
+    margin-bottom: 60px;
+}
+
+.case-study h2 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+.case-study h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    margin-top: 32px;
+}
+
+.case-study p {
+    margin-bottom: 16px;
+    color: #444;
+}
+
+.case-study ul,
+.case-study ol {
+    margin-bottom: 16px;
+    margin-left: 20px;
+}
+
+.case-study li {
+    margin-bottom: 8px;
+    color: #444;
+}
+
+.role-summary {
+    margin-top: 24px;
+    padding: 20px;
+    background: #f8f8f8;
+    border-left: 3px solid #1a1a1a;
+}
+
+.callout {
+    padding: 20px;
+    background: #f8f8f8;
+    border-left: 3px solid #1a1a1a;
+    margin: 24px 0;
+}
+
+.image-placeholder {
+    height: 400px;
+    background: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 60px 0;
+    color: #999;
+}
+
+/* Case Study Navigation */
+.case-study-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+    padding-top: 40px;
+    border-top: 1px solid #e5e5e5;
+}
+
+.case-study-nav a {
+    color: #666;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.case-study-nav a:hover {
+    color: #1a1a1a;
+}
+
+/* Responsive for case studies */
+@media (max-width: 768px) {
+    .case-study-header h1 {
+        font-size: 32px;
+    }
+    
+    .image-placeholder {
+        height: 250px;
+    }
+    
+    .case-study-nav {
+        flex-direction: column;
+        gap: 16px;
+    }
+}
